@@ -68,7 +68,7 @@ samb . pada ( 'pengguna-kehadiran-pembaruan' , json   =>   konsol .log ( json .i
 samb . aktif ( 'pesan-status-update' , json  =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@reuz.id`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@ydbahtiar`)
 })
 
 conn.on('message-new', async(m) =>
@@ -84,7 +84,7 @@ conn.on('message-new', async(m) =>
 // Groups
 
 if (text.includes("!buatgrup"))
-   {
+   {I
 var nama = text.split("!buatgrup")[1].split("-nomor")[0];
 var nom = text.split("-nomor")[1];
 var numArray = nom.split(",");
